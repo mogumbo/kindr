@@ -31,6 +31,15 @@ project(kindr)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
+find_package(catkin REQUIRED)
+
+catkin_package(
+  INCLUDE_DIRS
+    include
+  CATKIN_DEPENDS
+    roscpp
+)
+
 find_package(Eigen REQUIRED)
 include_directories(include)
 include_directories(${EIGEN_INCLUDE_DIR})

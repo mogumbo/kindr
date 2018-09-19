@@ -18,13 +18,8 @@
   <author>Christian Gehring</author>
   <author>Hannes Sommer</author>
  
-  <buildtool_depend>cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
   <depend>eigen</depend>
-  <exec_depend>catkin</exec_depend>
-
-  <export>
-    <!-- Specify that this is not really a ROS package-->
-    <build_type>cmake</build_type>
-  </export>
+  <build_export_depend>roscpp</build_export_depend>
 
 </package>
